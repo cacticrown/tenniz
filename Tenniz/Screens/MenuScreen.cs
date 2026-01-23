@@ -32,6 +32,8 @@ public class MenuScreen : Screen
         ui.UpdateStart(gameTime);
         
         MenuPanel.Push();
+        Label.Put("Tenniz");
+
         if (Button.Put("Play").Clicked) {
             Game.SwitchScreen(new GameplayScreen());
         }
